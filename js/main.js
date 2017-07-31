@@ -11,6 +11,15 @@ $(function() {
         items: 1
     });
 
+    $('.abi-amentors button').on('click', function () {
+        $('.abi-amentors').slideUp('fast');
+        $('.abi-hidden').slideDown('fast');
+    });
+
+    $('.abi-mentor-block').on('click', function () {
+        $(this).siblings('.abi-mb-popup').trigger('click');
+    });
+
     $('.abi-menu-button button').on('click', function () {
         $('.abi-menu').addClass('active');
         $('body').addClass('active');
@@ -29,6 +38,13 @@ $(function() {
         $('.abi-menu').removeClass('active');
         var target = $(this).attr('href');
         $('html, body').animate({scrollTop: $(target).offset().top - 120}, 800);
+        return false;
+    });
+
+
+    $('#header-fixed ul a').on('click', function(){
+        var targets = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(targets).offset().top - 120}, 800);
         return false;
     });
 

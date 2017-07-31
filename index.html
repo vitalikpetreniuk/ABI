@@ -123,33 +123,6 @@
 								</div>
 							</div>
 						</div>
-						<div id="header-fixed">
-							<div class="abi-hf-logo">
-								<a href="#">
-									<img src="img/logo.svg" alt="logo">
-								</a>
-							</div>
-							<div class="abi-menu-button hidden-xs">
-								<button type="button">
-									Меню
-								</button>
-							</div>
-							<div class="abi-menu-button visible-xs">
-								<button type="button">
-									Меню
-								</button>
-							</div>
-							<div class="abi-contacts">
-								<div class="abi-c-tel">
-									<a href="tel:380637543727">+38063 754 37 27</a>
-								</div>
-								<div>
-									<button type="button" class="abi-btn" data-toggle="modal" data-target="#myModal">
-										<span>Записаться на курс</span>
-									</button>
-								</div>
-							</div>
-						</div>
 						<div class="abi-ts-bblock">
 							<div>
 								<div class="abi-tl-date">
@@ -228,6 +201,39 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
+				<div id="header-fixed">
+					<div class="abi-hf-logo">
+						<a href="#">
+							<img src="img/logo.svg" alt="logo">
+						</a>
+					</div>
+					<ul>
+						<li>
+							<a href="#abi-menu-item-3">Спикеры</a>
+						</li>
+						<li>
+							<a href="#abi-menu-item-4">Программа</a>
+						</li>
+						<li>
+							<a href="#abi-price">Купить билет</a>
+						</li>
+					</ul>
+					<div class="abi-menu-button">
+						<button type="button">
+							Меню
+						</button>
+					</div>
+					<div class="abi-contacts">
+						<div class="abi-c-tel">
+							<a href="tel:380637543727">+38063 754 37 27</a>
+						</div>
+						<div>
+							<button type="button" class="abi-btn" data-toggle="modal" data-target="#myModal">
+								<span>Записаться на курс</span>
+							</button>
+						</div>
+					</div>
+				</div>
 				<div class="abi-section-in">
 					<h2>
 						О чем вы узнаете на курсе?
@@ -493,7 +499,7 @@
 		</div>
 	</div>
 </section>
-<section class="abi-section-fourth section-pattern abi-edges">
+<section class="abi-section-fourth section-pattern abi-edges" id="abi-price">
 	<div>
 		<div class="container">
 			<div class="row">
@@ -585,6 +591,7 @@
 							</div>
 						</div>
 					</div>
+					<button class="abi-mb-popup" type="button" data-toggle="modal" data-target="#abi-mentor1">popup</button>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<div class="abi-mentor-block">
@@ -612,6 +619,7 @@
 							</div>
 						</div>
 					</div>
+					<button class="abi-mb-popup" type="button" data-toggle="modal" data-target="#abi-mentor2">popup</button>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<div class="abi-mentor-block">
@@ -639,6 +647,7 @@
 							</div>
 						</div>
 					</div>
+					<button class="abi-mb-popup" type="button" data-toggle="modal" data-target="#abi-mentor3">popup</button>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<div class="abi-mentor-block">
@@ -666,6 +675,68 @@
 							</div>
 						</div>
 					</div>
+					<button class="abi-mb-popup" type="button" data-toggle="modal" data-target="#abi-mentor4">popup</button>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 abi-hidden">
+					<div class="abi-mentor-block">
+						<div class="abi-m-ptoto">
+							<div>
+								<img src="img/mentor1.jpg" alt="img">
+								<img src="img/mentor1a.svg" alt="img">
+							</div>
+						</div>
+						<div class="abi-m-name">
+							<div>
+								Дмитрий
+							</div>
+							<div>
+								Плешаков
+							</div>
+						</div>
+						<div class="abi-m-info">
+							<div>
+								Septa
+							</div>
+							<div>
+								управляющий<br>
+								партнер
+							</div>
+						</div>
+					</div>
+					<button class="abi-mb-popup" type="button" data-toggle="modal" data-target="#abi-mentor1">popup</button>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 abi-hidden">
+					<div class="abi-mentor-block">
+						<div class="abi-m-ptoto">
+							<div>
+								<img src="img/mentor2.jpg" alt="img">
+								<img src="img/mentor1a.svg" alt="img">
+							</div>
+						</div>
+						<div class="abi-m-name">
+							<div>
+								Дмитрий
+							</div>
+							<div>
+								Билаш
+							</div>
+						</div>
+						<div class="abi-m-info">
+							<div>
+								Septa
+							</div>
+							<div>
+								управляющий<br>
+								партнер
+							</div>
+						</div>
+					</div>
+					<button class="abi-mb-popup" type="button" data-toggle="modal" data-target="#abi-mentor2">popup</button>
+				</div>
+			</div>
+			<div class="row abi-amentors">
+				<div class="col-md-12 text-center">
+					<button type="button">Показать больше</button>
 				</div>
 			</div>
 		</div>
@@ -1441,7 +1512,6 @@
 	</div>
 </footer>
 
-<!-- Modal -->
 <div class="modal fade abi-modal" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -1456,6 +1526,194 @@
                         <span>Подписаться</span>
                     </button>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade abi-modal abi-mmodal" id="abi-mentor1" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<div class="abi-mb-modal">
+					<div>
+						<div class="abi-mb-ptoto">
+							<img src="img/mentor1.jpg" alt="img">
+						</div>
+						<div class="abi-soc">
+							<a href="#" class="soc-fb">
+								<img src="img/fb.svg" alt="img">
+							</a>
+							<a href="#" class="soc-linkedin">
+								<img src="img/linkedin.svg" alt="img">
+							</a>
+						</div>
+						<div class="abi-mb-theme">
+							<h4>Тема семинара:</h4>
+							<div>
+								Lorem ipsum dolor sit
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="abi-mb-name">
+							Дмитрий Плешаков
+						</div>
+						<div class="abi-mb-info">
+							<div>
+								Septa
+							</div>
+							<div>
+								управляющий партнер
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, quo soluta aeterno eu, labore voluptatibus nec eu, duo et tale minimum. Sint aeterno sed id, usu legimus eligendi accusata an.</p>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade abi-modal abi-mmodal" id="abi-mentor2" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<div class="abi-mb-modal">
+					<div>
+						<div class="abi-mb-ptoto">
+							<img src="img/mentor2.jpg" alt="img">
+						</div>
+						<div class="abi-soc">
+							<a href="#" class="soc-fb">
+								<img src="img/fb.svg" alt="img">
+							</a>
+							<a href="#" class="soc-linkedin">
+								<img src="img/linkedin.svg" alt="img">
+							</a>
+						</div>
+						<div class="abi-mb-theme">
+							<h4>Тема семинара:</h4>
+							<div>
+								Lorem ipsum dolor sit
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="abi-mb-name">
+							Дмитрий Билаш
+						</div>
+						<div class="abi-mb-info">
+							<div>
+								Septa
+							</div>
+							<div>
+								управляющий партнер
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, quo soluta aeterno eu, labore voluptatibus nec eu, duo et tale minimum. Sint aeterno sed id, usu legimus eligendi accusata an.</p>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade abi-modal abi-mmodal" id="abi-mentor3" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<div class="abi-mb-modal">
+					<div>
+						<div class="abi-mb-ptoto">
+							<img src="img/mentor1.jpg" alt="img">
+						</div>
+						<div class="abi-soc">
+							<a href="#" class="soc-fb">
+								<img src="img/fb.svg" alt="img">
+							</a>
+							<a href="#" class="soc-linkedin">
+								<img src="img/linkedin.svg" alt="img">
+							</a>
+						</div>
+						<div class="abi-mb-theme">
+							<h4>Тема семинара:</h4>
+							<div>
+								Lorem ipsum dolor sit
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="abi-mb-name">
+							Дмитрий Плешаков
+						</div>
+						<div class="abi-mb-info">
+							<div>
+								Septa
+							</div>
+							<div>
+								управляющий партнер
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, quo soluta aeterno eu, labore voluptatibus nec eu, duo et tale minimum. Sint aeterno sed id, usu legimus eligendi accusata an.</p>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade abi-modal abi-mmodal" id="abi-mentor4" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<div class="abi-mb-modal">
+					<div>
+						<div class="abi-mb-ptoto">
+							<img src="img/mentor2.jpg" alt="img">
+						</div>
+						<div class="abi-soc">
+							<a href="#" class="soc-fb">
+								<img src="img/fb.svg" alt="img">
+							</a>
+							<a href="#" class="soc-linkedin">
+								<img src="img/linkedin.svg" alt="img">
+							</a>
+						</div>
+						<div class="abi-mb-theme">
+							<h4>Тема семинара:</h4>
+							<div>
+								Lorem ipsum dolor sit
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="abi-mb-name">
+							Дмитрий Билаш
+						</div>
+						<div class="abi-mb-info">
+							<div>
+								Septa
+							</div>
+							<div>
+								управляющий партнер
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, quo soluta aeterno eu, labore voluptatibus nec eu, duo et tale minimum. Sint aeterno sed id, usu legimus eligendi accusata an.</p>
+					</div>
+				</div>
             </div>
         </div>
     </div>

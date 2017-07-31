@@ -10,7 +10,7 @@ body {
   line-height: 1.5;
   font-size: 16px; }
 
-a, a:hover {
+a, a:hover, a:focus {
   text-decoration: none;
   color: #101633; }
 
@@ -112,7 +112,13 @@ input[type='text'] {
     background: url("../img/back3.svg") center no-repeat;
     -webkit-background-size: 100% auto;
             background-size: 100% auto; }
-  #abi-top-header .abi-menu-button {
+#abi-top-header .abi-menu-button button
+{
+  height: 45px;
+  padding-left: 65px;
+  font-size: 20px;
+}
+#abi-top-header .abi-menu-button {
     position: relative; }
     #abi-top-header .abi-menu-button:after {
       content: '';
@@ -235,6 +241,10 @@ input[type='text'] {
   .abi-logo img {
     max-width: 100%; }
 
+.abi-ts-tblock .abi-ts-first
+{
+  font-size: 26px;
+}
 .abi-ts-tblock {
   margin-bottom: 195px;
   position: relative; }
@@ -340,10 +350,21 @@ input[type='text'] {
   width: 16px; }
 
 #header-fixed {
+  visibility: hidden;
+  opacity: 0;
   padding: 10px 0;
   position: relative;
-  margin-bottom: 65px; }
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  height: 0;
+  overflow: hidden;
+}
   #header-fixed.is_stuck {
+    height: auto;
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
     background: url("../img/pattern.jpg") left top repeat;
     z-index: 99; }
     #header-fixed.is_stuck:before {
@@ -377,7 +398,34 @@ input[type='text'] {
     content: '';
     display: block;
     clear: both; }
+  #header-fixed ul
+  {
+    float: left;
+  }
+#header-fixed li
+{
+  float: left;
+  margin-right: 20px;
+}
+#header-fixed li:last-child
+{
+  margin-right: 0;
+}
+#header-fixed li a
+{
+  display: block;
+  color: #4abec7;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 65px;
+}
+#header-fixed li a:hover, #header-fixed li a:focus
+{
+  color: #ff814d;
+}
   #header-fixed .abi-menu-button {
+    display: none;
     float: left;
     padding-top: 17px;
     margin-right: 55px; }
@@ -897,10 +945,18 @@ input[type='text'] {
     z-index: 2; }
 
 .abi-mentor-block {
+  cursor: pointer;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  border: 3px solid transparent; }
+  border: 3px solid transparent;
+  margin-bottom: 15px;
+}
+
+.abi-mb-popup
+{
+  display: none;
+}
 
 .abi-m-ptoto {
   -webkit-transition: all .3s ease;
@@ -1631,3 +1687,108 @@ footer {
     .abi-menu form input {
       width: 500px;
       margin-right: 15px; }
+
+.abi-mmodal .modal-dialog
+{
+  width: 800px;
+}
+.abi-mb-modal
+{
+  overflow: hidden;
+  color: #4abec7;
+}
+.abi-mb-modal > div:first-child
+{
+  float: left;
+  width: 220px;
+}
+.abi-mb-modal > div:last-child
+{
+  margin-left: 250px;
+}
+.abi-mb-name
+{
+  position: relative;
+  margin-bottom: 13px;
+  font-size: 24px;
+  line-height: 1;
+  color: #ff814d;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.abi-mb-name:after
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 138px;
+  height: 3px;
+  background: #4abec7;
+}
+.abi-mb-info
+{
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.abi-mb-info > div:first-child
+{
+  text-transform: uppercase;
+}
+.abi-mb-modal p
+{
+  font-size: 18px;
+}
+.abi-mb-ptoto
+{
+  margin-bottom: 30px;
+}
+.abi-mb-ptoto img
+{
+  max-width: 100%;
+}
+.abi-mb-modal .abi-soc
+{
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.abi-mb-theme h4
+{
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff814d;
+  font-size: 18px;
+}
+.abi-mb-theme div
+{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.modal
+{
+  padding: 0 !important;
+}
+.abi-hidden
+{
+  display: none;
+}
+.abi-amentors button
+{
+  border: none;
+  border-bottom: 2px dotted #ff814d;
+  color: #ff814d;
+  font-size: 14px;
+  font-weight: 700;
+  background: none;
+  padding: 0;
+}
+.abi-amentors button:hover
+{
+  border-color: transparent;
+}

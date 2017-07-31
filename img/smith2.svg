@@ -4,7 +4,10 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 790 128.1"
 	 style="enable-background:new 0 0 790 128.1;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FF814D;}
+	.st0{
+		fill:#FF814D;
+		opacity: .7;
+	}
 </style>
 <rect x="239.9" y="1.1" class="st0" width="3.6" height="3.6"/>
 <rect x="239" y="7.4" class="st0" width="5.4" height="5.4"/>

@@ -3,6 +3,9 @@
     right: 0; } }
 
 @media (max-width: 1199px) {
+  #header-fixed ul {
+    float: right;
+  }
   .abi-section-first > div {
     background: url(../img/smith.svg) 20px 80px no-repeat, url(../img/smith2.svg) 20px 760px no-repeat;
     -webkit-background-size: 790px auto;
@@ -154,6 +157,22 @@
     left: -85px; } }
 
 @media (max-width: 991px) {
+  #header-fixed
+  {
+    padding: 5px 0;
+  }
+  .abi-contacts .abi-c-tel
+  {
+    margin-bottom: 5px;
+  }
+  #header-fixed .abi-menu-button, #header-fixed .abi-contacts
+  {
+    display: block;
+  }
+  #header-fixed ul
+  {
+    display: none;
+  }
   .abi-btn {
     font-size: 22px; }
   .abi-btn-big {
@@ -175,8 +194,18 @@
       padding-right: 0; }
   #header-fixed .abi-hf-logo {
     display: none; }
-  #header-fixed .abi-menu-button {
-    padding-top: 15px; }
+  #header-fixed .abi-menu-button
+  {
+    padding-top: 0;
+    margin: 0 !important;
+  }
+  #header-fixed .abi-menu-button button {
+
+    height: 68px;
+    width: 68px;
+    padding: 0;
+    text-indent: -99999px;
+  }
   .abi-ts-bblock .abi-tl-date {
     display: none; }
   .abi-ts-bbi {
@@ -366,12 +395,24 @@
     display: none; } }
 
 @media (max-width: 850px) {
+  .abi-mmodal .modal-dialog
+  {
+    width: auto;
+  }
   .abi-section-first > div {
     background: url(../img/smith.svg) -178px 200px no-repeat, url(../img/smith2.svg) -178px 882px no-repeat;
     -webkit-background-size: 790px auto;
             background-size: 790px auto; } }
 
 @media (max-width: 767px) {
+  .abi-contacts .abi-c-tel
+  {
+    font-size: 20px;
+  }
+  .abi-contacts a
+  {
+    padding-left: 35px;
+  }
   .abi-menu-button {
     text-align: right;
     float: none;
@@ -430,10 +471,6 @@
     margin-bottom: 15px; }
     #header-fixed .abi-btn {
       float: left; }
-    #header-fixed .abi-menu-button {
-      float: right;
-      margin: 0;
-      padding-top: 10px; }
   .abi-num-block {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -453,7 +490,7 @@
     -webkit-background-size: 790px auto;
             background-size: 790px auto; }
   .abi-ts-first, .abi-ts-second {
-    font-size: 16px; }
+    font-size: 16px !important; }
   .abi-int-item {
     margin-bottom: 15px; }
   .abi-int-list {
@@ -585,10 +622,10 @@
     display: none; }
   #abi-top-header:before {
     left: 15px; }
-  .abi-blocks-list {
-    display: none; }
-  .abi-blocks-slider {
-    display: block !important; }
+  /*.abi-blocks-list {*/
+    /*display: none; }*/
+  /*.abi-blocks-slider {*/
+    /*display: block !important; }*/
     .abi-blocks-slider .owl-nav > div {
       position: absolute;
       width: 24px;
@@ -601,8 +638,12 @@
       .abi-blocks-slider .owl-nav > div.owl-next {
         background: url("../img/ar.svg") center no-repeat;
         right: -5px; }
-  .abi-block-item {
+  .abi-block-item:last-child
+  {
     margin-bottom: 0;
+  }
+  .abi-block-item {
+    /*margin-bottom: 0;*/
     padding: 16px 0 0;
     text-align: center; }
   .abi-bi-img {
@@ -616,6 +657,29 @@
     margin-bottom: 40px; } }
 
 @media (max-width: 550px) {
+  .abi-mb-modal > div:first-child {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .abi-mb-modal .abi-soc {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .abi-mb-modal > div:last-child
+  {
+    margin-left: 0;
+    text-align: center;
+  }
+  .abi-mb-name:after
+  {
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+  }
   .abi-section-fifth .container {
     width: 340px; }
     .abi-section-fifth .container .row {
@@ -673,8 +737,11 @@
   .abi-accordeon .panel-body {
     font-size: 12px;
     line-height: 18px; }
-  .abi-partners > div {
-    width: 100%; } }
+  .abi-partners > div img
+  {
+    max-width: 80%;
+  }
+}
 
 @media (max-width: 400px) {
   .countdown-section {
@@ -694,12 +761,6 @@
     width: 80%; }
   .abi-btn {
     padding: 3px; }
-  #header-fixed .abi-menu-button {
-    padding-top: 5px; }
-    #header-fixed .abi-menu-button button {
-      text-indent: -99999px;
-      width: 32px;
-      padding: 0; }
   .abi-soc a {
     margin-right: 15px; }
   .abi-flogo {
