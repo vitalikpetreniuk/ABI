@@ -1,4 +1,9 @@
+
+new WOW().init();
+
 $(function() {
+
+    $('body').show();
 
         var newTime = new Date();
         newTime = new Date(2017, 10, 1);
